@@ -35,7 +35,7 @@ public class Main2 {
         Locker locker5 = new Locker(104);*/
 
        Query query = session.getNamedQuery("get_student_by_name");
-       List<Student> students = query.setParameter("firstName", "Radu").getResultList();
+       List<Student> students = query.setParameter("firstName", "vali").getResultList();
        for(Student student: students){
            System.out.println(student);
        }

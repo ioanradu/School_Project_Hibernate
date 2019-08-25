@@ -18,6 +18,9 @@ public class Group {
     @ElementCollection(targetClass = Student.class)
     private List<Student> students;
 
+    public Group() {
+    }
+
     public Group(List<Student> students) {
         this.students = students;
     }
